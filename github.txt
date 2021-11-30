@@ -1,0 +1,11 @@
+1、先在github中创建一个仓库
+2、在家目录中编辑.gitconfig
+[user]
+	email =  邮箱号
+	name =  用户名
+3、使用ssh-keygen -t rsa -C '邮箱号' 在~/.ssh中保存公钥和私钥
+4、将公钥添加到github的setting中
+5、使用git clone github中的代码   克隆仓库
+6、add和commit后使用git push origin 分支名 将修改提交到github
+7、可以使用git branch --set-upstream-to=origin/远程分支名 本地分支名 使本地分支跟踪服务器分支
+8、使用git pull 分支名 从远程分支拉代码
